@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    background-color: rgb(27, 27, 33);
+    min-height: 13vh;
+    width: 100%;
+    position: relative;
+}
+.logo{
+    margin-left: 5.8rem;
+    color: #888;
+    font-size: 25px;
+    padding: 5px;
+}
+.navbar{
+    background: #000;
+    margin: auto;
+    width: 85%;
+    padding: 10px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 600;
+}
+
+.bg-img{
+    width: 960px;
+    min-height: 360px;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    background-color: blue;
+    background: url('https://thetechpanda.com/wp-content/uploads/2013/09/tothenew-2.jpg');
+}
+.content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+p{
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    background: lightgray;
+    text-align: justify;
+}
+.gallery-container{
+    margin: auto;
+    width: 70%;
+}
+.box-container{
+    width: 215px;
+    height: 320px;
+    margin: 9px;
+    display: inline-block;
+    margin-bottom: 200px;
+}
+.box-container img{
+    width: 215px;
+    height: 315px;
+}
+.box-container h3{
+    text-align: center;
+    font-size: 15px;
+}
+
+footer{
+    background-color: rgb(27, 27, 33);
+    padding: 20px;
+}
+footer b{
+    color: #888;
+}
+footer #name{
+    float: right;
+}

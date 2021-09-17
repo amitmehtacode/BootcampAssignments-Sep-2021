@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q10</title>
+      <script src="../JQuery.min.js"></script>
+   </head>
+   <body>
+<style>
+ul,li,a {
+     padding: 0px;
+     margin: 0px;
+}
+ #nav a {
+     color: #fff;
+     list-style: none;
+}
+ div ul li ul {
+     background-color: #4a5b78;
+     list-style: none 
+}
+ #nav > li > a {
+     background-color: #343434;
+     padding: 16px 18px;
+     text-decoration: none;
+     display: block;
+     border-bottom: 2px solid #212121;
+     background: linear-gradient(top, #343434, #111111);
+}
+ #nav li ul li a {
+     padding: 10px 0;
+     padding-left: 30px;
+     text-decoration: none;
+     display: block;
+}
+ div {
+     width: 280px;
+}
+ #nav li ul {
+     display: none;
+}
+
+</style>
+<div id="container">
+    <ul id="nav">
+    <li>
+        <a href="#">Select your plan</a>
+        <ul>
+            <li><a href="#">1gb</a></li>
+            <li><a href="#">10gb</a></li>
+            <li><a href="#">500gb</a></li>
+            <li><a href="#">1tb</a></li>
+        </ul>
+    </li>
+    </ul>
+</div>
+
+
+<script>
+$(document).ready(function() {
+    $("#nav li").hover(
+        function() {
+            $(this).find('ul').slideDown();
+        },
+        function() {
+            $(this).find('ul').slideUp();
+    });
+});
+</script>
+   </body>
+</html>

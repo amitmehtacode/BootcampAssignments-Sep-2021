@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Data</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- <h1>List of Employee</h1> -->
+
+<input type="text" id="mytext">
+
+<p id="show">something</p>
+
+<script>
+$("document").ready(function() {
+$("input").keydown(function(e){
+if(e.keyCode == 13)
+$("p").text($("input").val());
+})
+});
+</script>
+
+
+
+
+<button id="btn">hi</button>
+
+<script>
+$("#btn").click(function() {
+$(this).toggleClass("hello")
+$(this).text() === 'hi'
+? $(this).text('hello')
+: $(this).text('hi')
+})
+</script>
+
+<script>
+$(".button").click(function() {
+$(".button span").html($(".button span").html() == 'followed' ? 'follow' : 'followed');
+});
+</script>
+
+<script >
+
+// $(document).ready(function(){
+// $.ajax({
+// type:"POST",
+// url:"https://jsonplaceholder.typicode.com/todos",
+// success:function(data)
+// {
+// completed: true
+// id: 54
+// title: "some new changes"
+// userId: 3
+
+// alert('Get Success');
+// console.log(data);
+// }
+// });
+// });
+
+
+
+// JSON.stringify() -->json to string
+// JSON.parse() --> string to json
+
+
+// $(document).ready(function(){
+// $.ajax({
+// type:"POST", 
+// data : 
+// {
+// "userId": 510,
+// "id": 510,
+// "title": "Session wass great",
+// "body": "bootcamp session" 
+// }, 
+// url:"https://jsonplaceholder.typicode.com/posts",
+// success:function(data)
+// {
+// alert('Get Success');
+// console.log(data);
+
+</script>
+</body>
+</html>
+
+

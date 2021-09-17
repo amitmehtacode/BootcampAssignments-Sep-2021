@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in HTML/CSS</title>
+</head>
+<body>
+    <div class="fixed">I am Fixed</div>
+    
+    <div class="lotsofText">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis 
+            neque beatae facilis tempore soluta animi itaque corporis magnam 
+            nemo incidunt. Veniam veritatis obcaecati adipisci non pariatur, 
+            aliquam labore a omnis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis 
+            neque beatae facilis tempore soluta animi itaque corporis magnam 
+            nemo incidunt. Veniam veritatis obcaecati adipisci non pariatur, 
+            aliquam labore a omnis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis 
+            neque beatae facilis tempore soluta animi itaque corporis magnam 
+            nemo incidunt. Veniam veritatis obcaecati adipisci non pariatur, 
+            aliquam labore a omnis.</p>
+    </div>
+
+    <style>
+        p{
+            min-height: 150vh;
+        }
+        .fixed{
+            position: fixed;
+            border: 5px solid #000;
+            background: green;
+            padding: 10px;
+            top: 100px;
+            left: 80px;
+            width: 800px;
+        }
+    </style>
+</body>
+</html>

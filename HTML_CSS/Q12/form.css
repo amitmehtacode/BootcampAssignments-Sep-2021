@@ -1,0 +1,180 @@
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    text-transform: uppercase;
+    color: #4FBD9D;   
+}
+.navbar{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 85%;
+    padding: 35px 0;
+    align-items: center;
+}   
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #4FBD9D;
+}
+.container{
+    width: 25%;
+    min-height: 75vh;
+    border: 2px solid #888;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 7px;
+}
+.heading-container{
+    background-color: #888;
+    width: 113.5%;
+    margin-left: -20px;
+}
+.heading-container h1{
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+.input-fields{
+    margin-top: 10px;
+}
+label{
+    font-size: 12px;
+    color: #222;
+    font-weight: 300;
+}
+#title{
+    width: 100%;
+    border: 1px solid #888;
+    border-radius: 3px;
+    min-height: 4vh;
+    margin-bottom: 5px;
+}
+#desc{
+    border: 1px solid #888;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+select{
+    width: 100%;
+    min-height: 4vh;
+    background-color: #4FBD9D;
+    border: none;
+    border-radius: 3px; 
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+option{
+    color: #fff;
+}
+#version{
+    width: 30%;
+    min-height: 4vh;
+    border-radius: 3px;
+    border: 1px solid #888;
+}
+.license-container{
+    display: flex;
+}
+.free-container{
+    margin-right: 90px;
+}
+input[type="file"]{
+    border: 1px solid #888;
+    border-radius: 3px;
+    width: 100%;
+}
+#os{
+    margin-bottom: 5px;
+}
+#product{
+    margin-bottom: 5px;
+}
+#version{
+    margin-bottom: 5px;
+}
+.license{
+    margin-bottom: 5px;
+}
+.filupp > input[type=file] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .filupp {
+    position: relative;
+    border: 1px solid #888;
+    display: flex;
+    padding: 5px;
+    font-size: 13px;
+    width: 80%;
+    border-radius: 4px;
+    height: 2em;
+    color: #888;
+    cursor: pointer;
+  }  
+  .filupp-file-name {
+    width: 75%;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+
+  .action{
+    background-color: #888;
+    width: 41%;
+    color: #fff;
+    margin-left: 193px;
+    height: 25.5px;
+    margin-top: -5.7px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .action-btn-container{
+    background-color: #888;
+    min-height: 9vh;
+    margin-top: 10px;
+    width: 114%;
+    margin-left: -21px;
+    margin-right: 5px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .action-btn{
+      float: right;
+      padding: 5px;
+      margin: 15px;
+      color: #fff;
+      background-color:#4FBD9D;
+      border: none;
+      border-radius: 3px;
+  }

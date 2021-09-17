@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+    <script src="../JQuery.min.js"></script>
+</head>
+<body>
+    <p>Select your competency</p>
+    <select id="onchange">
+        <option value="reactnative">ReactNative</option>
+        <option value="qe">QE</option>
+        <option value="mean">Mean</option>
+        <option value="jvm">JVM</option>
+        <option value="python">Python</option>
+    </select>
+    <div id="changed">hello</div>
+
+
+    <script>
+        $('document').ready(function(){
+            $('select').on('change', function(e){
+                $('#changed').text($('selected , #onchange').val());
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q12</title>
+      <script src="../JQuery.min.js"></script>
+      <style>
+        html,body{height:100%;width:100%}
+        
+        html, body {
+            height : 100%;
+        }
+        .panel {
+            width : 80%;
+            height : 80%;
+            background : #888;
+        }
+        div ul li {
+            list-style:none;
+            display: inline;
+            cursor: pointer;
+            background-color: #121212;
+            color: #fff;
+        }
+        
+        </style>
+   </head>
+   <body>
+    <div class="panel">
+        <ul>
+            <li> list inside div</li>
+            <li> list inside div</li>
+            <li> list inside div</li>
+        </ul>
+     </div>
+ <script>
+ 
+ $(document).ready(function(){
+    $('.panel').on('click', function () { 
+        alert('You clicked on the panel element.'); 
+        })
+        .children()
+        .on('click', function (e) {
+        e.stopPropagation();
+    });
+ });
+ 
+ 
+ </script>
+ <a href="index.html">index file</a>
+   </body>
+</html>

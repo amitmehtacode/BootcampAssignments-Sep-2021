@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q16</title>
+      <script src="../JQuery.min.js"></script>
+   </head>
+   <body>
+	<p id="dv">ajax delete request is going to be performed</p>
+	<table style="border: 1px solid grey">
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Nitin</td>
+			<td>23</td>
+		</tr>
+		<tr>
+			<td>harry</td>
+			<td>22</td>
+		</tr>
+	<button>cross button</button></table>
+</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.ajax({
+        		url: "https://jsonplaceholder.typicode.com/todos/2",
+        		dataType: "json",
+        		type: 'DELETE',
+        		success: function(res){
+          				$("button").on('click', function(){
+          					$('#dv').html('<br>' + res);
+          					$('tr').remove();
+          				});
+        		},
+       		});
+		});
+	</script>
+    </body>
+</html>

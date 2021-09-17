@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q14</title>
+      <script src="../JQuery.min.js"></script>
+   </head>
+   <body>
+       <table>
+           <tr>
+               <th>Name</th>
+               <th>Experience</th>
+           </tr>
+
+           <tr>
+               <td>Amit</td>
+               <td class="findNum">2</td>
+           </tr>
+
+           <tr>
+            <td>Akash</td>
+            <td class="findNum">12</td>
+        </tr>
+
+        <tr>
+            <td>Anuj</td>
+            <td class="findNum">8</td>
+        </tr>
+
+        <tr>
+            <td>Permil</td>
+            <td class="findNum">15</td>
+        </tr>
+
+        <tr>
+            <td>Vipul</td>
+            <td class="findNum">4</td>
+        </tr>
+       </table>
+       <script>
+           $('document').ready(function(){
+            $('.findNum').each(function(){
+                if($(this).text() > 10)
+                $(this).css('background-color', 'blue');
+            });
+           });
+       </script>
+   </body>
+</html>

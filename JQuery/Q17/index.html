@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Q16</title>
+      <script src="../JQuery.min.js"></script>
+   </head>
+   <body>
+       <h1>Slider</h1>
+       <div class="center">
+           <img src="img1.jpg" alt="">
+       </div>
+        <script>
+            $('document').ready(function(){
+                let image_arr=['img1.jpg','img2.jpg','img3.jpg','img4.jpg'];
+                let index=0;
+                setInterval(function(){
+                    if(index>2)
+                    index=0;
+                    else 
+                    index++;
+                    console.log(index);
+                    $('img').attr('src',image_arr[index]);},500);
+            });
+        </script>
+   </body>
+</html>
